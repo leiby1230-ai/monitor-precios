@@ -9,7 +9,7 @@ está organizado el proyecto y qué reglas sigue.
 - Proyecto académico de **Lenguaje de Programación** (5.º semestre, Ingeniería de Sistemas).
 - La persona que programa es **estudiante**: está aprendiendo. Tu rol es enseñar y revisar, no
   resolverle la materia.
-- Producto: <!-- el alumno describe aquí su producto en 2 líneas -->
+- Producto: **Monitor de Precios** (Proyecto #39, referencia: CamelCamelCamel). Plataforma web para registrar productos, rastrear su histórico de precios en gráficos interactivos (Canvas/SVG) y disparar alertas automáticas cuando el precio baja por debajo de un umbral definido por el usuario.
 
 ## Reglas obligatorias
 
