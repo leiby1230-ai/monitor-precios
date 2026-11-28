@@ -1,19 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recreación · Inicio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header>
-      <!-- Tu marca, no la del sitio original -->
-    </header>
-    <main>
-      <!-- Pantalla 1 de 3 -->
-    </main>
-    <footer></footer>
-    <script src="./main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monitor de precios e histórico de ofertas en PrecioAlerta.">
+  <title>PrecioAlerta · Bajadas de Precio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" aria-hidden="true">
+        <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+        <polyline points="16 17 22 17 22 11"></polyline>
+      </svg>
+      <span>PrecioAlerta</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">Menú</button>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Ofertas</a></li>
+        <li><a href="producto.html" class="nav-link">Histórico</a></li>
+        <li><a href="alertas.html" class="nav-link">Mis Alertas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bajadas de Precio Reales</h1>
+      <p>Compara el precio actual contra el mínimo histórico antes de comprar.</p>
+    </section>
+
+    <section class="card toolbar" aria-label="Filtros de catálogo">
+      <input type="search" id="searchProduct" class="input" placeholder="Buscar producto..."
+        aria-label="Buscar producto">
+      <select id="categoryFilter" class="select" aria-label="Filtrar por categoría">
+        <option value="todas">Todas las categorías</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="hogar">Hogar</option>
+        <option value="audio">Audio</option>
+      </select>
+    </section>
+
+    <section class="grid-cards" id="productGrid" aria-label="Productos en seguimiento">
+      <article class="card product-card" data-category="tecnologia">
+        <span class="badge badge-ok">-24% Mínimo histórico</span>
+        <h2 style="margin: 0.6rem 0 0.25rem;">Monitor IPS 27" 144Hz</h2>
+        <p class="muted">Tienda: Amazon · Tecnología</p>
+        <p style="margin: 0.75rem 0;">
+          <span class="price-now">$189.00</span>
+          <span class="price-old">$249.00</span>
+        </p>
+        <a href="producto.html" class="btn">Ver histórico</a>
+      </article>
+
+      <article class="card product-card" data-category="audio">
+        <span class="badge badge-ok">-18% Buena oferta</span>
+        <h2 style="margin: 0.6rem 0 0.25rem;">Audífonos Bluetooth ANC</h2>
+        <p class="muted">Tienda: MercadoLibre · Audio</p>
+        <p style="margin: 0.75rem 0;">
+          <span class="price-now">$65.00</span>
+          <span class="price-old">$79.00</span>
+        </p>
+        <a href="producto.html" class="btn">Ver histórico</a>
+      </article>
+
+      <article class="card product-card" data-category="hogar">
+        <span class="badge badge-warn">-9% Precio promedio</span>
+        <h2 style="margin: 0.6rem 0 0.25rem;">Freidora de Aire 5L</h2>
+        <p class="muted">Tienda: Amazon · Hogar</p>
+        <p style="margin: 0.75rem 0;">
+          <span class="price-now">$82.00</span>
+          <span class="price-old">$90.00</span>
+        </p>
+        <a href="producto.html" class="btn">Ver histórico</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
