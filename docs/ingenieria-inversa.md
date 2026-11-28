@@ -15,8 +15,8 @@
 9. **Auditoría Lighthouse original:** El puntaje de Rendimiento y Prácticas recomendadas se ve afectado por scripts de terceros y anuncios.
 10. **Experiencia en móvil (375 px):** Las tablas comparativas y los formularios de alerta requieren demasiado desplazamiento y zoom en pantallas pequeñas.
 
-![DevTools CamelCamelCamel](capturas01-camel-devtools.png)
-![Lighthouse CamelCamelCamel Original](capturas02-lighthouse-original.png)
+![DevTools CamelCamelCamel](capturas/capturas01-camel-devtools.png)
+![Lighthouse CamelCamelCamel Original](capturas/capturas02-lighthouse-original.png)
 
 ---
 
@@ -26,7 +26,7 @@
 2. **Accesibilidad y semántica:** Etiquetas semánticas (`header`, `nav`, `main`, `section`), atributos `aria-label` y alto contraste en textos y precios.
 3. **Diseño móvil a 375 px:** Menú colapsable, tarjetas adaptables y tabla de alertas con scroll controlado.
 
-![Vista móvil 375px de PrecioAlerta](capturas03-clon-movil.png)
+![Vista móvil 375px de PrecioAlerta](capturas/capturas03-clon-movil.png)
 
 ---
 
@@ -39,4 +39,4 @@
 | Prácticas recomendadas | `[73]` | `[96]` | `+[23]` |
 | SEO | `[92]` | `[100]` | `+[8]` |
 
-![Lighthouse PrecioAlerta Después](capturas04-lighthouse-clon.png)
+![Lighthouse PrecioAlerta Después](capturas/capturas04-lighthouse-clon.png)
